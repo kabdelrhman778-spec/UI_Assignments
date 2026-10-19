@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Details | Campus Events Guide</title>
+  <meta name="description" content="Campus Events Guide for Zewail City: discover events, read details, check the schedule and register.">
+  <link rel="stylesheet" href="./Campus.css">
+</head>
+
+<body>
+
+<input type="checkbox" id="theme-toggle" class="theme-input">
+
+<div class="page">
+  <header class="site-header">
+    <div class="container header-bar">
+      <p class="brand">Campus Events Guide</p>
+      <label for="theme-toggle" class="theme-label">Dark mode</label>
+    </div>
+    <nav class="container main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="events_details.html" aria-current="page">Event Details</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="registration.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Zewail City Programming Competition 2026</h1>
+    <p class="lead">Saturday, 14 November 2026 - Innovation Hall</p>
+
+
+
+    <div class="detail-layout">
+
+      <!-- 1. Programming Competition -->
+      <section aria-labelledby="competition-title" class="panel">
+        <h2 id="competition-title">Zewail City Programming Competition 2026</h2>
+
+        <p>Teams of up to three students solve algorithmic problems against the clock, with a live scoreboard tracking the standings.</p>
+
+        <dl class="facts">
+          <dt>Date</dt>
+          <dd>Saturday, 14 November 2026</dd>
+          <dt>Time</dt>
+          <dd>10:00 AM - 6:00 PM</dd>
+          <dt>Venue</dt>
+          <dd>Innovation Hall</dd>
+        </dl>
+
+        <h3>Agenda</h3>
+        <ol class="agenda">
+          <li><strong>10:00 AM</strong> - Check-in and team seating</li>
+          <li><strong>10:30 AM</strong> - Opening speech and rules</li>
+          <li><strong>11:00 AM</strong> - Contest starts</li>
+          <li><strong>2:00 PM</strong> - Lunch break</li>
+          <li><strong>4:30 PM</strong> - Contest ends</li>
+          <li><strong>5:15 PM</strong> - Winners and certificates</li>
+        </ol>
+
+        <a class="btn" href="registration.html">Register</a>
+      </section>
+
+
+      <!-- 2. Clubs Day -->
+      <section aria-labelledby="clubs-title" class="panel">
+        <h2 id="clubs-title">Clubs Day 2026</h2>
+
+        <p>Discover student clubs, meet their members, explore campus activities, and find opportunities to join communities.</p>
+
+        <dl class="facts">
+          <dt>Date</dt>
+          <dd>Sunday, 25 October 2026</dd>
+          <dt>Time</dt>
+          <dd>11:00 AM - 3:00 PM</dd>
+          <dt>Venue</dt>
+          <dd>Central Plaza</dd>
+        </dl>
+
+        <h3>Agenda</h3>
+        <ol class="agenda">
+          <li><strong>11:00 AM</strong> - Welcome and event opening</li>
+          <li><strong>11:15 AM</strong> - Club booths open</li>
+          <li><strong>12:00 PM</strong> - Student club presentations</li>
+          <li><strong>1:00 PM</strong> - Interactive activities and demonstrations</li>
+          <li><strong>2:30 PM</strong> - Meet club representatives</li>
+          <li><strong>3:00 PM</strong> - Closing</li>
+        </ol>
+
+        <a class="btn" href="registration.html">Register</a>
+      </section>
+
+
+      <!-- 3. Campus Marathon -->
+      <section aria-labelledby="marathon-title" class="panel">
+        <h2 id="marathon-title">Campus Marathon 2026</h2>
+
+        <p>Join fellow students for a morning of running, fitness, friendly competition, and campus community spirit.</p>
+
+        <dl class="facts">
+          <dt>Date</dt>
+          <dd>Friday, 27 November 2026</dd>
+          <dt>Time</dt>
+          <dd>7:00 AM - 10:00 AM</dd>
+          <dt>Venue</dt>
+          <dd>Campus Track</dd>
+        </dl>
+
+        <h3>Agenda</h3>
+        <ol class="agenda">
+          <li><strong>7:00 AM</strong> - Participant check-in</li>
+          <li><strong>7:15 AM</strong> - Warm-up and stretching</li>
+          <li><strong>7:30 AM</strong> - Opening announcements and safety instructions</li>
+          <li><strong>7:45 AM</strong> - Marathon starts</li>
+          <li><strong>9:15 AM</strong> - Race finishes and recovery</li>
+          <li><strong>9:40 AM</strong> - Awards and closing remarks</li>
+          <li><strong>10:00 AM</strong> - Event ends</li>
+        </ol>
+
+        <a class="btn" href="registration.html">Register</a>
+      </section>
+
+    </div>
+
+
+    <section aria-labelledby="ticket-title" class="panel">
+      <h2 id="ticket-title">Tickets and entry</h2>
+      <ul>
+        <li>Zewail City students: free entry with a valid student ID.</li>
+        <li>Guests from other universities: 100 EGP at the Innovation Hall desk.</li>
+        <li>Spectators: free, subject to available seats.</li>
+      </ul>
+    </section>
+
+
+    <section aria-labelledby="review-title" class="panel">
+      <h2 id="review-title">Write an event review</h2>
+      <form action="#" method="get" class="form-grid">
+        <div class="field">
+          <label for="rev-name">Your name</label>
+          <input type="text" id="rev-name" name="rev-name" required maxlength="60" pattern="[A-Za-z ]{3,60}" title="Use 3 to 60 letters and spaces" placeholder="Sara Ahmed">
+        </div>
+        <div class="field">
+          <label for="rev-email">University email</label>
+          <input type="email" id="rev-email" name="rev-email" required maxlength="80" placeholder="s-sara@zewailcity.edu.eg">
+        </div>
+        <div class="field">
+          <label for="rev-rating">Rating</label>
+          <select id="rev-rating" name="rev-rating" required>
+            <option value="">Choose a rating</option>
+            <option>5 - Excellent</option>
+            <option>4 - Good</option>
+            <option>3 - Average</option>
+            <option>2 - Poor</option>
+            <option>1 - Very poor</option>
+          </select>
+        </div>
+        <div class="field wide">
+          <label for="rev-text">Your review</label>
+          <textarea id="rev-text" name="rev-text" rows="4" required minlength="20" maxlength="500" placeholder="Tell other students what you liked (20 to 500 characters)"></textarea>
+        </div>
+        <div class="field wide">
+          <button type="submit" class="btn">Send review</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <p>&copy; 2026 Campus Events Guide - Zewail City of Science and Technology</p>
+      <ul class="social-list" aria-label="Social links">
+        <li><a href="https://www.facebook.com/ZewailCity" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/zewailcityst/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>

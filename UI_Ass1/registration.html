@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration | Campus Events Guide</title>
+  <meta name="description" content="Campus Events Guide for Zewail City: discover events, read details, check the schedule and register.">
+  <link rel="stylesheet" href="./Campus.css">
+</head>
+
+<body>
+<input type="checkbox" id="theme-toggle" class="theme-input">
+
+<div class="page">
+  <header class="site-header">
+    <div class="container header-bar">
+      <p class="brand">Campus Events Guide</p>
+      <label for="theme-toggle" class="theme-label">Dark mode</label>
+    </div>
+    <nav class="container main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="events_details.html">Event Details</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="registration.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Register for the event</h1>
+
+    <section aria-labelledby="reg-event-title" class="panel highlight">
+      <p>Fields marked with a star (*) are required.</p>
+    </section>
+
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Registration form</h2>
+      <form action="#" method="get" class="form-grid">
+
+        <fieldset class="wide">
+          <legend>Attendee details</legend>
+          <div class="form-grid inner">
+            <div class="field">
+              <label for="fullname">Attendee name *</label>
+              <input type="text" id="fullname" name="fullname" required maxlength="60" pattern="[A-Za-z ]{3,60}" title="Use 3 to 60 letters and spaces" placeholder="Omar Hassan">
+            </div>
+            <div class="field">
+              <label for="studentid">Student ID *</label>
+              <input
+                type="text"
+                id="studentid"
+                name="studentid"
+                required maxlength="9"
+                pattern="[0-9]{8,9}"
+                title="Enter 8 or 9 digits"
+                placeholder="202300123">
+            </div>
+            <div class="field">
+              <label for="email">University email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="80"
+                pattern="[A-Za-z0-9._%+-]+@zewailcity\.edu\.eg"
+                title="Enter a valid email ending in @zewailcity.edu.eg"
+                placeholder="s-omar@zewailcity.edu.eg">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="wide">
+          <legend>Participation</legend>
+          <div class="form-grid inner">
+            <div class="field">
+              <label for="event-choice">Event choice *</label>
+              <select id="event-choice" name="event-choice" required>
+                <option value="programming" selected>Programming Competition - 14 Nov 2026</option>
+                <option value="clubs">Clubs Day - 25 Oct 2026</option>
+                <option value="marathon">Campus Marathon - 27 Nov 2026</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="team-size">Team size (1 to 3) *</label>
+              <input type="number" id="team-size" name="team-size" required min="1" max="3" value="1">
+            </div>
+            <div class="field">
+              <label for="skill">Programming skill level (1 beginner, 10 expert)</label>
+              <input type="range" id="skill" name="skill" min="1" max="10" value="5">
+            </div>
+            <div class="field">
+              <label for="practice-date">Preferred practice session date</label>
+              <input type="date" id="practice-date" name="practice-date" min="2026-11-01" max="2026-11-12">
+            </div>
+            <div class="field">
+              <label for="arrival">Arrival time on the event day *</label>
+              <input type="time" id="arrival" name="arrival" required min="08:00" max="11:00" value="09:30">
+            </div>
+            <div class="field">
+              <label for="team-color">Team badge color</label>
+              <input type="color" id="team-color" name="team-color" value="#0b5d6b">
+            </div>
+            <fieldset class="field">
+              <legend>Participation type *</legend>
+              <div class="choice-row">
+                <label><input type="radio" name="type" value="solo" required> Solo</label>
+                <label><input type="radio" name="type" value="team"> Team</label>
+              </div>
+            </fieldset>
+            <fieldset class="field">
+              <legend>Extras</legend>
+              <div class="choice-row">
+                <label><input type="checkbox" name="extras" value="lunch"> Lunch box</label>
+                <label><input type="checkbox" name="extras" value="shirt"> Event T-shirt</label>
+              </div>
+            </fieldset>
+          </div>
+        </fieldset>
+
+
+        <div class="field wide">
+          <button type="submit" class="btn">Register now</button>
+          <button type="reset" class="btn btn-outline">Clear form</button>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="contact-title" class="panel">
+      <h2 id="contact-title">Event contact</h2>
+      <ul>
+        <li>Organizer: Student Activities Office, Zewail City</li>
+        <li>Email: <a href="mailto:events@zewailcity.edu.eg">events@zewailcity.edu.eg</a></li>
+      </ul>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-bar">
+      <p>&copy; 2026 Campus Events Guide - Zewail City of Science and Technology</p>
+      <ul class="social-list" aria-label="Social links">
+        <li><a href="https://www.facebook.com/ZewailCity" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/zewailcityst/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
